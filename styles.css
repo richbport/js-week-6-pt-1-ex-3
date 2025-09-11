@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.scroll-box {
+    height: 2000px; /* Makes the page scrollable */
+    background: linear-gradient(to bottom, #f4f4f4, #cccccc);
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
