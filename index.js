@@ -11,9 +11,15 @@ function throttle(func, limit) {
     };
 }
 
-
-
-
+function debounce(func, delay) {
+  let timeoutID;
+  return function () {
+    const args = arguments;
+    const context = this;
+    clearTimeout(timeoutID);
+    timeoutID = setTimeout(() => func.apply(context, args), delay)
+  }
+}
 
 let throttleCount = 0;
 function handleThrottleScroll() {
