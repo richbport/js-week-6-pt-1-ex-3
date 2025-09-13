@@ -21,10 +21,16 @@ function debounce(func, delay) {
   }
 }
 
+// let throttleCount = 0;
+// function handleThrottleScroll() {
+//     throttleCount++
+//     document.getElementById('throttleCount').textContent = throttleCount
+// }
+
 let throttleCount = 0;
 function handleThrottleScroll() {
-    throttleCount++
-    document.getElementById('ThrottleCount').textContent = throttleCount
+  throttleCount++
+  document.getElementById('throttleCount').textContent = throttleCount;
 }
 
 function handleDebouncingScroll() {
