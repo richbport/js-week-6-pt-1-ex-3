@@ -27,13 +27,6 @@ function handleThrottleScroll() {
   document.getElementById('throttleCount').textContent = throttleCount;
 }
 
-// function handleDebouncingScroll() {
-//     document.getElementById("debounceState").textContent = "Scrolling...";
-//     setTimeout(() => {
-//         document.getElementById("debounceState").textContent = "Not Scrolling..."
-//     }, 200)
-// }
-
 function handleDebouncingScroll() {
   document.getElementById("debounceState").textContent = "Scrolling...";
   setTimeout(() => {
@@ -41,9 +34,15 @@ function handleDebouncingScroll() {
   }, 200);
 }
 
+// const throttledScrollHandler = throttle(handleThrottleScroll, 500);
+
+// const debounceScrollHandler = debounce(handleDebouncingScroll, 500);
+
+
 const throttledScrollHandler = throttle(handleThrottleScroll, 500);
 
 const debounceScrollHandler = debounce(handleDebouncingScroll, 500);
+
 
 window.addEventListener("scroll", () => {
   throttledScrollHandler();
