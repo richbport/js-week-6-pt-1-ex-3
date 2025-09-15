@@ -21,23 +21,24 @@ function debounce(func, delay) {
   }
 }
 
-// let throttleCount = 0;
-// function handleThrottleScroll() {
-//     throttleCount++
-//     document.getElementById('throttleCount').textContent = throttleCount
-// }
-
 let throttleCount = 0;
 function handleThrottleScroll() {
   throttleCount++
   document.getElementById('throttleCount').textContent = throttleCount;
 }
 
+// function handleDebouncingScroll() {
+//     document.getElementById("debounceState").textContent = "Scrolling...";
+//     setTimeout(() => {
+//         document.getElementById("debounceState").textContent = "Not Scrolling..."
+//     }, 200)
+// }
+
 function handleDebouncingScroll() {
-    document.getElementById("debounceState").textContent = "Scrolling...";
-    setTimeout(() => {
-        document.getElementById("debounceState").textContent = "Not Scrolling..."
-    }, 200)
+  document.getElementById("debounceState").textContent = "Scrolling...";
+  setTimeout(() => {
+    document.getElementById("debounceState").textContent = "Not Scrolling..."
+  })
 }
 
 const throttledScrollHandler = throttle(handleThrottleScroll, 500);
