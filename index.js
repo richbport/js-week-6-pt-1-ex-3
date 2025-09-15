@@ -43,7 +43,6 @@ const throttledScrollHandler = throttle(handleThrottleScroll, 500);
 
 const debounceScrollHandler = debounce(handleDebouncingScroll, 500);
 
-
 window.addEventListener("scroll", () => {
   throttledScrollHandler();
   debounceScrollHandler();
