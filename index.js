@@ -37,8 +37,8 @@ function handleThrottleScroll() {
 function handleDebouncingScroll() {
   document.getElementById("debounceState").textContent = "Scrolling...";
   setTimeout(() => {
-    document.getElementById("debounceState").textContent = "Not Scrolling..."
-  })
+    document.getElementById("debounceState").textContent = "Not Scrolling...";
+  }, 200);
 }
 
 const throttledScrollHandler = throttle(handleThrottleScroll, 500);
