@@ -34,11 +34,6 @@ function handleDebouncingScroll() {
   }, 200);
 }
 
-// const throttledScrollHandler = throttle(handleThrottleScroll, 500);
-
-// const debounceScrollHandler = debounce(handleDebouncingScroll, 500);
-
-
 const throttledScrollHandler = throttle(handleThrottleScroll, 500);
 
 const debounceScrollHandler = debounce(handleDebouncingScroll, 500);
