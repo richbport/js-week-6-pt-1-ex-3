@@ -42,3 +42,5 @@ window.addEventListener("scroll", () => {
   throttledScrollHandler();
   debounceScrollHandler();
 });
+
+test text
